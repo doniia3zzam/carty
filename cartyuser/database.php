@@ -4,7 +4,7 @@ class database {
     var $con;
     function __construct(){
 
-        $this->con=mysqli_connect("localhost","root","","cart");
+        $this->con=mysqli_connect("localhost","root","","cartyy");
     }
     function runDml($statement){
         if (!( mysqli_query($this->con,$statement))) {

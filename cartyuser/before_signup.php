@@ -38,7 +38,7 @@ include "headerbefore.php";
                             <div class="row text-center">
                                 <div class="col-md-12 col-12">
                                     <div class="form-group">
-                                        <a href="http://localhost:803/laravel/finalCarty/cartyAdminn" class="btn btn-warning form-control">Seller Login</a>
+                                        <a href="http://localhost:803/laravel/carty/carty" class="btn btn-warning form-control">Seller Login</a>
                                     </div>
                                 </div>
                                 <div class="col-12">

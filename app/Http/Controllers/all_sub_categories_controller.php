@@ -65,9 +65,9 @@ class all_sub_categories_controller extends Controller
             $request->subcategory_photo->move($photoPath,$photoName);
 
             $movedPhoto = $photoPath . $photoName;
-            $userCat = 'cartyuser/assets/images/sub-categories/'.$photoName;
+            // $userCat = 'cartyuser/assets/images/sub-categories/'.$photoName;
             usleep(1000* 1000); 
-            copy($movedPhoto,$userCat);
+            // copy($movedPhoto,$userCat);
 
             $data = $request->except(['_token']);
             $data['subcategory_photo'] = $photoName;

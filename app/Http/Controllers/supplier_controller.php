@@ -86,16 +86,16 @@ class supplier_controller extends Controller
                 $photoName = time() . '.'. $images['image_name'][$i]->extension();
                 if($images['image_name'][$i]->extension() == 'png' || $images['image_name'][$i]->extension() == 'PNG'){
 
-                    $publicPath = 'public/assets/images/products/'.$photoName;
-                    $productPath = 'cartyuser/assets/images/product/large-size/';
-                    $images['image_name'][$i]->move($productPath,$photoName);
-                    $movedPhoto = $productPath . $photoName;
-                    $smallPhoto = 'cartyuser/assets/images/product/small-size/'.$photoName;
+                    $publicPath = 'public/assets/images/products/';
+                    // $productPath = 'cartyuser/assets/images/product/large-size/';
+                    $images['image_name'][$i]->move($publicPath,$photoName);
+                    // $movedPhoto = $productPath . $photoName;
+                    // $smallPhoto = 'cartyuser/assets/images/product/small-size/'.$photoName;
                     usleep(500* 1000);
-                    copy($movedPhoto,$smallPhoto);
-                    usleep(200* 1000);
-                    copy($movedPhoto,$publicPath);
-                    usleep(500* 1000);
+                    // copy($movedPhoto,$smallPhoto);
+                    // usleep(200* 1000);
+                    // copy($movedPhoto,$publicPath);
+                    // usleep(500* 1000);
 
                     $images['image_name'][$i] = $photoName;
                     DB::table('products_images')->insert(
@@ -202,16 +202,16 @@ class supplier_controller extends Controller
                 $photoName = time() . '.'. $images['image_name'][$i]->extension();
                 if($images['image_name'][$i]->extension() == 'png' || $images['image_name'][$i]->extension() == 'PNG'){
 
-                    $publicPath = 'public/assets/images/products/'.$photoName;
-                    $productPath = 'cartyuser/assets/images/product/large-size/';
-                    $images['image_name'][$i]->move($productPath,$photoName);
-                    $movedPhoto = $productPath . $photoName;
-                    $smallPhoto = 'cartyuser/assets/images/product/small-size/'.$photoName;
+                    $publicPath = 'public/assets/images/products/';
+                    // $productPath = 'cartyuser/assets/images/product/large-size/';
+                    $images['image_name'][$i]->move($publicPath,$photoName);
+                    // $movedPhoto = $productPath . $photoName;
+                    // $smallPhoto = 'cartyuser/assets/images/product/small-size/'.$photoName;
                     usleep(500* 1000);
-                    copy($movedPhoto,$smallPhoto);
-                    usleep(200* 1000);
-                    copy($movedPhoto,$publicPath);
-                    usleep(500* 1000);
+                    // copy($movedPhoto,$smallPhoto);
+                    // usleep(200* 1000);
+                    // copy($movedPhoto,$publicPath);
+                    // usleep(500* 1000);
 
                     $images['image_name'][$i] = $photoName;
                     // var_dump($images['image_name'][$i]);

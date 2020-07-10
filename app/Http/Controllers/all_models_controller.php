@@ -69,9 +69,9 @@ class all_models_controller extends Controller
         $request->model_image->move($photoPath,$imgName);
 
         $movedPhoto = $photoPath . $imgName;
-        $userModel = 'cartyuser/assets/images/models/'.$imgName;
+        // $userModel = 'cartyuser/assets/images/models/'.$imgName;
         usleep(1000* 1000); 
-        copy($movedPhoto,$userModel);
+        // copy($movedPhoto,$userModel);
 
 
         $data =$request->except(['_token']);
@@ -130,9 +130,9 @@ class all_models_controller extends Controller
         $request->model_image->move($photoPath,$imgName);
 
         $movedPhoto = $photoPath . $imgName;
-        $userModel = 'cartyuser/assets/images/models/'.$imgName;
+        // $userModel = 'cartyuser/assets/images/models/'.$imgName;
         usleep(1000* 1000); 
-        copy($movedPhoto,$userModel);
+        // copy($movedPhoto,$userModel);
 
         $data = $request->except(['_token','_method','model_image']);
         $data['model_image'] = $imgName;

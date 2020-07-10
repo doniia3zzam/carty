@@ -154,7 +154,7 @@ if(isset($_SESSION['username'])){
                                         <div class="single-product">
                                             <div class="slide-image_area">
                                                 <a href="allproducts.php?cate=<?php echo($row['category_id']) ?>">
-                                                    <img src="assets/images/featured-categories/<?php echo($row['category_photo_name']) ?>" alt="Uren's Featured Categories">
+                                                    <img src="../public/assets/images/categories/<?php echo($row['category_photo_name']) ?>" alt="Uren's Featured Categories">
                                                 </a>
                                             </div>
                                             <div class="slide-content_area">
@@ -229,13 +229,13 @@ if(isset($_SESSION['username'])){
                                                         if($rows['status'] == 'primary')
                                                         {
                                                     ?>
-                                                                <img class="primary-img" src="assets/images/product/large-size/<?php echo($rows['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                <img class="primary-img" src="../public/aassets/images/products/<?php echo($rows['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                 <?php
                                                             }
                                                             if($rows['status'] == 'secondary')
                                                             {
                                                         ?>
-                                                                    <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rows['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="secondary-img" src="../public/aassets/images/products/<?php echo($rows['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                             }?>
 

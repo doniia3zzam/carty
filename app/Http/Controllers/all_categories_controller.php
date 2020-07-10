@@ -61,9 +61,9 @@ class all_categories_controller extends Controller
             $request->category_photo_name->move($photoPath,$photoName);
 
             $movedPhoto = $photoPath . $photoName;
-            $userCat = 'cartyuser/assets/images/featured-categories/'.$photoName;
+            // $userCat = 'cartyuser/assets/images/featured-categories/'.$photoName;
             usleep(1000* 1000); 
-            copy($movedPhoto,$userCat);
+            // copy($movedPhoto,$userCat);
     
             $data = $request->except(['_token']);
             $data['category_photo_name'] = $photoName;
@@ -119,9 +119,9 @@ class all_categories_controller extends Controller
         $request->category_photo_name->move($photoPath,$photoName);
 
         $movedPhoto = $photoPath . $photoName;
-        $userCat = 'cartyuser/assets/images/featured-categories/'.$photoName;
+        // $userCat = 'cartyuser/assets/images/featured-categories/'.$photoName;
         usleep(1000* 1000); 
-        copy($movedPhoto,$userCat);
+        // copy($movedPhoto,$userCat);
 
         $data = $request->except(['_token','_method','category_photo_name']);
         $data['category_photo_name'] = $photoName;
