@@ -69,9 +69,9 @@ class all_offers_controller extends Controller
       $request->offer_photo_name->move($image_path,$image);
 
         $movedPhoto = $image_path . $image;
-        $userOffer = 'cartyuser/assets/images/slider/'.$image;
+        // $userOffer = 'cartyuser/assets/images/slider/'.$image;
         usleep(1000* 1000); 
-        copy($movedPhoto,$userOffer);
+        // copy($movedPhoto,$userOffer);
 
         
 
@@ -146,9 +146,9 @@ class all_offers_controller extends Controller
         $image_path='public/assets/images/offered/';
         $request->offer_photo_name->move($image_path,$image);
         $movedPhoto = $image_path . $image;
-        $userOffer = 'cartyuser/assets/images/slider/'.$image;
+        // $userOffer = 'cartyuser/assets/images/slider/'.$image;
         usleep(1000* 1000); 
-        copy($movedPhoto,$userOffer);
+        // copy($movedPhoto,$userOffer);
 
         
         $data=$request->all();

@@ -65,9 +65,9 @@ class all_brands_controller extends Controller
         $data =$request->except(['_token']);
 
         $movedPhoto = $photoPath . $imgName;
-        $userBrand = 'cartyuser/assets/images/brand/'.$imgName;
+        // $userBrand = 'cartyuser/assets/images/brand/'.$imgName;
         usleep(1000* 1000); 
-        copy($movedPhoto,$userBrand);
+        // copy($movedPhoto,$userBrand);
 
         $data['brand_image']= $imgName;
         // var_dump($data);
@@ -129,9 +129,9 @@ class all_brands_controller extends Controller
         $request->brand_image->move($photoPath,$imgName);
 
         $movedPhoto = $photoPath . $imgName;
-        $userBrand = 'cartyuser/assets/images/brand/'.$imgName;
+        // $userBrand = 'cartyuser/assets/images/brand/'.$imgName;
         usleep(1000* 1000); 
-        copy($movedPhoto,$userBrand);
+        // copy($movedPhoto,$userBrand);
 
         $data = $request->except(['_token','_method','brand_image']);
         $data['brand_image'] =$imgName;

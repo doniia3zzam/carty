@@ -135,7 +135,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bars"></i>Sub Categories</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-building-o"></i><a href="{{url('sub_category')}}">>All Sub Cate</a></li>
+                            <li><i class="fa fa-building-o"></i><a href="{{url('sub_category')}}">All Sub Cate</a></li>
                             <li><i class="fa fa-plus"></i><a href="{{url('sub_category/create')}}">Add New Sub Cate</a></li>
                         </ul>
                     </li>
@@ -173,25 +173,17 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bars"></i>Admins</a>
                         <ul class="sub-menu children dropdown-menu">
-                            {{-- <li><i class="ti-user"></i><a href="{{url('adminProfile/'.Auth::user()->id)}}">My profile</a></li> --}}
+
                             <li><i class="fa fa-user"></i><a href="{{url('admon')}}">All Admins</a></li>
                             <li><i class="fa fa-plus"></i><a href="{{ route('register') }}">Add New admin</a></li>
                         </ul>
                     </li>
-                    {{-- <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bars"></i>Permissions</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-building-o"></i><a href="ui-buttons.html">All Permissions</a></li>
-                            <li><i class="fa fa-plus"></i><a href="ui-badges.html">Add New Permission</a></li>
-                        </ul>
-                    </li> --}}
+
                 @endif
-                {{-- @endif --}}
+
                 @if(!Auth::check())
                     <h3 class="menu-title">Supplier Admin</h3><!-- /.menu-title -->
-                    {{-- <li>
-                        <a href="{{url('supp_profile/1/edit')}}"> <i class="menu-icon ti-user"></i> My Profile </a>
-                    </li> --}}
+
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bars"></i> My Products</a>
                         <ul class="sub-menu children dropdown-menu">
