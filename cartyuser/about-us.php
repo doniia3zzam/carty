@@ -27,7 +27,7 @@ if(isset($_SESSION['username'])){
                     <div class="col-lg-6 col-md-5">
                         <div class="overview-img text-center img-hover_effect">
                             <a href="#">
-                                <img class="img-full" src="assets/images/about-us/1.jpg" alt="Uren's About Us Image">
+                                <img class="img-full" src="../public/assets/images/about-us/1.jpg" alt="Uren's About Us Image">
                             </a>
                         </div>
                     </div>

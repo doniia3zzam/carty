@@ -70,7 +70,7 @@ if(isset($_SESSION['username'])){
                                                         if($rowi['status'] == 'primary')
                                                         {
                                                         ?>
-                                                        <img src="assets/images/product/small-size/<?php echo($rowi['image_name']) ?>" alt="Uren's Cart Thumbnail" style="width: 100px; height:100px">
+                                                        <img src="../public/assets/images/products/<?php echo($rowi['image_name']) ?>" alt="Uren's Cart Thumbnail" style="width: 100px; height:100px">
                                                         <?php
                                                             }
                                                         ?>
@@ -129,10 +129,8 @@ if(isset($_SESSION['username'])){
                                                             ?>
                                                             <?php if($x == 1) {?>
                                                             <div class="alet alert-success text-center py-4">You have Successfully Rated This Products</div>
-                                                            <?php }
-                                                            header("refresh:2;url=myorders.php");
-                                                            ?>
-                                                                                                                    <?php
+                                                            <?php } ?>
+                                                            <?php
                                                         }else{
                                                             echo($result2);
                                                         }

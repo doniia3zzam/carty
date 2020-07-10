@@ -30,12 +30,12 @@ if(isset($_SESSION['username'])){
                         <div class="carousel-item">
                             <?php
                             }?>
-                                <a href="allproducts.php?off=<?php echo($row['offer_id']) ?>"><img src="assets/images/slider/<?php echo($row['offer_photo_name']) ?>" class="d-block w-100" alt="<?php echo($row['offer_title']); ?>"></a>
-                                <div class="carousel-caption d-none d-md-block" style="top:7%;">
+                                <a href="allproducts.php?off=<?php echo($row['offer_id']) ?>"><img src="../public/assets/images/offered/<?php echo($row['offer_photo_name']) ?>" class="d-block w-100" alt="<?php echo($row['offer_title']); ?>"></a>
+                                <div class="carousel-caption d-none d-md-block" style="top:12%;">
                                     <div class="sliderContent text-center">
                                         <h3 class="sliderContentTitle"><?php $t =$row['offer_title']; $s= substr($t,0,34); echo($s); ?></h3>
                                         <h1 class="sliderContentShortDesc"><?php $sd =$row['offer_short_desc']; $ss= substr($sd,0,18); echo($ss); ?></h1>
-                                        <p class="sliderContentDesc lead">
+                                        <p class="sliderContentDesc lead text-light">
                                             <?php $des =$row['description']; $sss= substr($des,0,200); echo($sss.' ...'); ?>
                                         </p>
                                         <a class="btn btn-outline-warning back btn-offer" href="allproducts.php?off=<?php echo($row['offer_id']) ?>">Go shopping</a>
@@ -154,7 +154,7 @@ if(isset($_SESSION['username'])){
                                         <div class="single-product">
                                             <div class="slide-image_area">
                                                 <a href="allproducts.php?cate=<?php echo($row['category_id']) ?>">
-                                                    <img src="assets/images/featured-categories/<?php echo($row['category_photo_name']) ?>" alt="Uren's Featured Categories">
+                                                    <img src="../public/assets/images/categories/<?php echo($row['category_photo_name']) ?>" alt="Uren's Featured Categories">
                                                 </a>
                                             </div>
                                             <div class="slide-content_area">
@@ -229,13 +229,13 @@ if(isset($_SESSION['username'])){
                                                         if($rows['status'] == 'primary')
                                                         {
                                                     ?>
-                                                                <img class="primary-img" src="assets/images/product/large-size/<?php echo($rows['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                <img class="primary-img" src="../public/assets/images/products/<?php echo($rows['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                 <?php
                                                             }
                                                             if($rows['status'] == 'secondary')
                                                             {
                                                         ?>
-                                                                    <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rows['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="secondary-img" src="../public/assets/images/products/<?php echo($rows['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                             }?>
 
@@ -376,14 +376,14 @@ if(isset($_SESSION['username'])){
                                                 {
 
                                                 ?>
-                                                    <a href="single-product-sale.php?pro=<?php echo($row['product_id']); ?>&supp=<?php  echo($row['supplier_id']); ?>">
+                                                                    <a href="single-product-sale.php?pro=<?php echo($row['product_id']); ?>&supp=<?php  echo($row['supplier_id']); ?>">
 
-                                                <?php
+                                                                        <?php
                                                     if($rows8['status']=='primary')
                                                     {
 
                                                     ?>
-                                                                            <img src="assets/images/product/large-size/<?php echo($rows8['image_name']) ?>" alt="Uren's Product Image">
+                                                                            <img src="../public/assets/images/products/<?php echo($rows8['image_name']) ?>" alt="Uren's Product Image">
                                                                             <?php
                                                     }
                                                 }
@@ -494,7 +494,7 @@ if(isset($_SESSION['username'])){
                                                             if($rows['status']=='primary')
                                                             {
                                                         ?>
-                                                                                <img src="assets/images/product/large-size/<?php echo($rows['image_name']) ?>" alt="Uren's Product Image">
+                                                                                <img src="../public/assets/images/products/<?php echo($rows['image_name']) ?>" alt="Uren's Product Image">
                                                                                 <?php
                                                             }
                                                         }
@@ -598,7 +598,7 @@ if(isset($_SESSION['username'])){
                                                         if($rows['status']=='primary')
                                                         {
                                                         ?>
-                                                        <img src="assets/images/product/large-size/<?php echo($rows['image_name']) ?>" alt="Uren's Product Image">
+                                                        <img src="../public/assets/images/products/<?php echo($rows['image_name']) ?>" alt="Uren's Product Image">
                                                         <?php
                                                         }
                                                     }
@@ -719,13 +719,13 @@ if(isset($_SESSION['username'])){
                                                     if($rows8['status'] == 'primary')
                                                         {
                                                 ?>
-                                                                    <img class="primary-img" src="assets/images/product/large-size/<?php echo($rows8['image_name']) ?>" alt="Uren's Product Image">
+                                                                    <img class="primary-img" src="../public/assets/images/products/<?php echo($rows8['image_name']) ?>" alt="Uren's Product Image">
                                                                     <?php
                                                         }
                                                     if($rows8['status'] == 'secondary')
                                                         {
                                                 ?>
-                                                                        <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rows8['image_name']) ?>" alt="Uren's Product Image">
+                                                                        <img class="secondary-img" src="../public/assets/images/products/<?php echo($rows8['image_name']) ?>" alt="Uren's Product Image">
                                                                         <?php
                                                         }
                                                 ?>
@@ -826,9 +826,9 @@ if(isset($_SESSION['username'])){
                                             <?php
                             }
                             ?>
-                                                <img src="assets/images/testimonial/bg-1.jpg" class="d-block w-100" alt="<?php echo($row['client_name']); ?>">
+                                                <img src="../public/assets/images/client/bg-1.jpg" class="d-block w-100" alt="<?php echo($row['client_name']); ?>">
                                                 <div class="client_photo_div">
-                                                    <img class="client_photo" src="assets/images/testimonial/user/<?php echo($row['client_photo']) ?>" alt="<?php echo($row['client_name']);?>" titlle="<?php echo($row['client_name']);?>">
+                                                    <img class="client_photo" src="../public/assets/images/client/<?php echo($row['client_photo']) ?>" alt="<?php echo($row['client_name']);?>" titlle="<?php echo($row['client_name']);?>">
                                                 </div>
                                                 <div class="carousel-caption d-none d-md-block">
                                                     <div class="sliderContent text-center" style="position: absolute;bottom: 10%;">
@@ -882,7 +882,7 @@ if(isset($_SESSION['username'])){
                                                     <div class="inner-slide">
                                                         <div class="single-product">
                                                             <a href="allproducts.php?brand_id=<?php echo($rowbr['brand_id']) ?>">
-                                            <img width="170px" height="150px" src="assets/images/brand/<?php echo($rowbr['brand_image'])?>" alt="<?php echo($rowbr['brand_name'])?>"
+                                            <img width="170px" height="150px" src="../public/assets/images/brands/<?php echo($rowbr['brand_image'])?>" alt="<?php echo($rowbr['brand_name'])?>"
                                             title="<?php echo($rowbr['brand_name'])?>">
                                             </a>
                                                         </div>
@@ -928,7 +928,7 @@ if(isset($_SESSION['username'])){
                                                         <div class="single-product">
                                                             <div class="slide-image_area">
                                                                 <a href="allproducts.php?cate=<?php echo($row_sub['category_id']) ?>&sub=<?php echo($row_sub['sub_cate_id']) ?>">
-                                                                    <img src="assets/images/sub-categories/<?php echo($row_sub['subcategory_photo']) ?>" alt="<?php echo($row_sub['sub_cate_name']) ?>">
+                                                                    <img src="../public/assets/images/subcategories/<?php echo($row_sub['subcategory_photo']) ?>" alt="<?php echo($row_sub['sub_cate_name']) ?>">
                                                                 </a>
                                                             </div>
                                                             <div class="slide-content_area">

@@ -39,7 +39,7 @@ include "headerafter.php";
                         <div class="text-center m-auto">
                             <form method="post" enctype="multipart/form-data">
 
-                                <img src="../storage/app/public/customers/<?php echo($row['photo_name']) ?>" alt="" style="cursor:pointer;height:250px; width:250px " id="prof" class="rounded-circle ">
+                                <img src="../public/assets/images/customer/<?php echo($row['photo_name']) ?>" alt="" style="cursor:pointer;height:250px; width:250px " id="prof" class="rounded-circle ">
                                 <input id="file" style="display: none;" type="file" name="file" onchange="showPhoto()" />
                                 <div class="">
                                     <button type="submit" name="change" id="change" class="btn btn-outline-success my-2" style="display:none;">Save</button>
@@ -212,7 +212,7 @@ include "headerafter.php";
                 if($fileError === 0){
                    if($fileSize < 50000000) {
                         $fileNameNew = time().'.'.$actualFileExtention;
-                        $fileDest = '../storage/app/public/customers/'.$fileNameNew;
+                        $fileDest = '../public/assets/images/customer/'.$fileNameNew;
                         move_uploaded_file($fileTmpName,$fileDest);
                         $cust->getimage($fileNameNew,$_SESSION['userid']);
                         $_SESSION['photo'] = $fileNameNew;

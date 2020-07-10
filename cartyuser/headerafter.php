@@ -82,12 +82,20 @@ else{
         <!-- Begin Uren's Header Main Area -->
         <header class="header-main_area header-main_area-2 header-main_area-3">
             <div class="header-middle_area">
+
+            <div class="bg-warning container-fluid d-flex  justify-content-end">
+                <div class="text-left">
+                    <a href="before_signup.php" class="text-dark col-4"> <b>Sell With Us</b> </a>
+                </div>
+
+            </div>
+
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-3 col-lg-2 col-md-3 col-sm-5">
                             <div class="header-logo_area">
                                 <a href="index.php">
-                                    <img src="assets/images/menu/logo/2.png" alt="Uren's Logo" style="height:60px">
+                                    <img src="../public/assets/images/menu/logo/2.png" alt="Uren's Logo" style="height:60px">
                                 </a>
                             </div>
                         </div>
@@ -277,112 +285,6 @@ else{
 
                                         <li class=""><a href="about-us.php">About Us</a></li>
                                         <li class=""><a href="contact.php">Contact</a></li>
-                                        <!-- <li class="megamenu-holder "><a href="shop-left-sidebar.php">Shop <i
-                                                class="ion-ios-arrow-down"></i></a>
-                                            <ul class="hm-megamenu">
-                                                <li><span class="megamenu-title">Shop Page Layout</span>
-                                                    <ul>
-                                                        <li><a href="shop-grid-fullwidth.php">Grid Fullwidth</a></li>
-                                                        <li><a href="shop-left-sidebar.php">Left Sidebar</a></li>
-                                                        <li><a href="shop-right-sidebar.php">Right Sidebar</a></li>
-                                                        <li><a href="shop-list-fullwidth.php">List Fullwidth</a></li>
-                                                        <li><a href="shop-list-left-sidebar.php">List Left Sidebar</a>
-                                                        </li>
-                                                        <li><a href="shop-list-right-sidebar.php">List Right
-                                                                Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><span class="megamenu-title">Single Product Style</span>
-                                                    <ul>
-                                                        <li><a href="single-product-gallery-left.php">Gallery Left</a>
-                                                        </li>
-                                                        <li><a href="single-product-gallery-right.php">Gallery
-                                                                Right</a>
-                                                        </li>
-                                                        <li><a href="single-product-tab-style-left.php">Tab Style
-                                                                Left</a>
-                                                        </li>
-                                                        <li><a href="single-product-tab-style-right.php">Tab Style
-                                                                Right</a>
-                                                        </li>
-                                                        <li><a href="single-product-sticky-left.php">Sticky Left</a>
-                                                        </li>
-                                                        <li><a href="single-product-sticky-right.php">Sticky Right</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><span class="megamenu-title">Single Product Type</span>
-                                                    <ul>
-                                                        <li><a href="single-product.php">Single Product</a></li>
-                                                        <li><a href="single-product-sale.php">Single Product Sale</a>
-                                                        </li>
-                                                        <li><a href="single-product-group.php">Single Product Group</a>
-                                                        </li>
-                                                        <li><a href="single-product-variable.php">Single Product
-                                                                Variable</a>
-                                                        </li>
-                                                        <li><a href="single-product-affiliate.php">Single Product
-                                                                Affiliate</a>
-                                                        </li>
-                                                        <li><a href="single-product-slider.php">Single Product
-                                                                Slider</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> -->
-                                        <!-- <li class=""><a href="javascript:void(0)">Pages <i
-                                                class="ion-ios-arrow-down"></i></a>
-                                            <ul class="hm-dropdown">
-                                                <li><a href="my-account.php">My Account</a></li>
-                                                <li><a href="login-register.php">Login | Register</a></li>
-                                                <li><a href="wishlist.php">Wishlist</a></li>
-                                                <li><a href="cart.php">Cart</a></li>
-                                                <li><a href="checkout.php">Checkout</a></li>
-                                                <li><a href="compare.php">Compare</a></li>
-                                                <li><a href="faq.php">FAQ</a></li>
-                                                <li><a href="404.php">404 Error</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <!-- <li class=""><a href="blog-left-sidebar.php">Blog <i
-                                                class="ion-ios-arrow-down"></i></a>
-                                            <ul class="hm-dropdown">
-                                                <li><a href="blog-left-sidebar.php">Grid View</a>
-                                                    <ul class="hm-dropdown hm-sub_dropdown">
-                                                        <li><a href="blog-2-column.php">Column Two</a></li>
-                                                        <li><a href="blog-3-column.php">Column Three</a></li>
-                                                        <li><a href="blog-left-sidebar.php">Left Sidebar</a></li>
-                                                        <li><a href="blog-right-sidebar.php">Right Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog-list-left-sidebar.php">List View</a>
-                                                    <ul class="hm-dropdown hm-sub_dropdown">
-                                                        <li><a href="blog-list-fullwidth.php">List Fullwidth</a></li>
-                                                        <li><a href="blog-list-left-sidebar.php">List Left Sidebar</a>
-                                                        </li>
-                                                        <li><a href="blog-list-right-sidebar.php">List Right
-                                                                Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog-details-left-sidebar.php">Blog Details</a>
-                                                    <ul class="hm-dropdown hm-sub_dropdown">
-                                                        <li><a href="blog-details-left-sidebar.php">Left Sidebar</a>
-                                                        </li>
-                                                        <li><a href="blog-details-right-sidebar.php">Right Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog-gallery-format.php">Blog Format</a>
-                                                    <ul class="hm-dropdown hm-sub_dropdown">
-                                                        <li><a href="blog-gallery-format.php">Gallery Format</a></li>
-                                                        <li><a href="blog-audio-format.php">Audio Format</a></li>
-                                                        <li><a href="blog-video-format.php">Video Format</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> -->
                                     </ul>
                                 </nav>
                             </div>
@@ -391,26 +293,11 @@ else{
                             <div class="ht-right_area">
                                 <div class="ht-menu">
                                     <ul>
-                                        <!-- <li><a href="javascript:void(0)"><span>$</span> <span>Currency</span><i
-                                                class="fa fa-chevron-down"></i></a>
-                                            <ul class="ht-dropdown ht-currency">
-                                                <li><a href="javascript:void(0)">€ EUR</a></li>
-                                                <li class="active"><a href="javascript:void(0)">£ Pound Sterling</a></li>
-                                                <li><a href="javascript:void(0)">$ Us Dollar</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <!-- <li><a href="javascript:void(0)"><span><img src="assets/images/menu/icon/1.jpg"
-                                                    alt=""></span> <span>Language</span> <i
-                                                class="fa fa-chevron-down"></i></a>
-                                            <ul class="ht-dropdown">
-                                                <li class="active"><a href="javascript:void(0)"><img src="assets/images/menu/icon/1.jpg" alt="JB's Language Icon">English</a></li>
-                                                <li><a href="javascript:void(0)"><img src="assets/images/menu/icon/2.jpg" alt="JB's Language Icon">Arabic</a>
-                                                </li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="custprofile.php" style="text-transform: capitalize"> <img style="width:24px;height:24px;border-radius:50%;" src="../storage/app/public/customers/<?php echo($_SESSION['photo']);  ?>" alt=""> &nbsp; <label> <?php echo($_SESSION['username']);  ?> </label> <i class="fa fa-chevron-down"></i></a>
+                                        <li><a href="custprofile.php"><img style="width:24px;height:24px;border-radius:50%;" src="../public/assets/images/customer/<?php echo($_SESSION['photo']);  ?>" alt=""> <label> <?php echo($_SESSION['username']);  ?>
+                                            </label><i class="fa fa-chevron-down"></i></a>
                                             <ul class="ht-dropdown ht-my_account">
-                                                <li><a href="custprofile.php">Profile <span class="fa fa-user"></span></a></li>
+                                                <!-- <li><a href="myaccount.php">My Addresses <span class="fa fa-user"></span></a></li> -->
+                                                <li><a href="myaccount.php">My Addresses <span class="fa fa-user"></span></a></li>
                                                 <li><a href="myorders.php">My orders <span class="fas fa-paper-plane"></span></a></li>
                                                 <li><a href="wishlist.php">My wishlist <span class="fas fa-paper-plane"></span></a></li>
                                                 <li class=""><a href="logout.php">Logout <i class="fas fa-sign-out-alt"></i></a></li>
@@ -512,11 +399,6 @@ else{
                                 <nav class="main-nav">
                                     <ul>
                                         <li class="dropdown-holder active"><a href="index.php">Home</a>
-                                            <!-- <ul class="hm-dropdown">
-                                                <li><a href="index.php">Home One</a></li>
-                                                <li><a href="index-2.php">Home Two</a></li>
-                                                <li><a href="index-3.php">Home Three</a></li>
-                                            </ul> -->
                                         </li>
 
                                         <li><a href="allproducts.php">Products</a></li>
@@ -552,112 +434,6 @@ else{
 
                                         <li class=""><a href="about-us.php">About Us</a></li>
                                         <li class=""><a href="contact.php">Contact</a></li>
-                                        <!-- <li class="megamenu-holder "><a href="shop-left-sidebar.php">Shop
-                                                <i class="ion-ios-arrow-down"></i></a>
-                                            <ul class="hm-megamenu">
-                                                <li><span class="megamenu-title">Shop Page Layout</span>
-                                                    <ul>
-                                                        <li><a href="shop-grid-fullwidth.php">Grid Fullwidth</a></li>
-                                                        <li><a href="shop-left-sidebar.php">Left Sidebar</a></li>
-                                                        <li><a href="shop-right-sidebar.php">Right Sidebar</a></li>
-                                                        <li><a href="shop-list-fullwidth.php">List Fullwidth</a></li>
-                                                        <li><a href="shop-list-left-sidebar.php">List Left Sidebar</a>
-                                                        </li>
-                                                        <li><a href="shop-list-right-sidebar.php">List Right
-                                                                Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><span class="megamenu-title">Single Product Style</span>
-                                                    <ul>
-                                                        <li><a href="single-product-gallery-left.php">Gallery Left</a>
-                                                        </li>
-                                                        <li><a href="single-product-gallery-right.php">Gallery
-                                                                Right</a>
-                                                        </li>
-                                                        <li><a href="single-product-tab-style-left.php">Tab Style
-                                                                Left</a>
-                                                        </li>
-                                                        <li><a href="single-product-tab-style-right.php">Tab Style
-                                                                Right</a>
-                                                        </li>
-                                                        <li><a href="single-product-sticky-left.php">Sticky Left</a>
-                                                        </li>
-                                                        <li><a href="single-product-sticky-right.php">Sticky Right</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><span class="megamenu-title">Single Product Type</span>
-                                                    <ul>
-                                                        <li><a href="single-product.php">Single Product</a></li>
-                                                        <li><a href="single-product-sale.php">Single Product Sale</a>
-                                                        </li>
-                                                        <li><a href="single-product-group.php">Single Product Group</a>
-                                                        </li>
-                                                        <li><a href="single-product-variable.php">Single Product
-                                                                Variable</a>
-                                                        </li>
-                                                        <li><a href="single-product-affiliate.php">Single Product
-                                                                Affiliate</a>
-                                                        </li>
-                                                        <li><a href="single-product-slider.php">Single Product
-                                                                Slider</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class=""><a href="javascript:void(0)">Pages <i
-                                                class="ion-ios-arrow-down"></i></a>
-                                            <ul class="hm-dropdown">
-                                                <li><a href="my-account.php">My Account</a></li>
-                                                <li><a href="login-register.php">Login | Register</a></li>
-                                                <li><a href="wishlist.php">Wishlist</a></li>
-                                                <li><a href="cart.php">Cart</a></li>
-                                                <li><a href="checkout.php">Checkout</a></li>
-                                                <li><a href="compare.php">Compare</a></li>
-                                                <li><a href="faq.php">FAQ</a></li>
-                                                <li><a href="404.php">404 Error</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <!-- <li class=""><a href="blog-left-sidebar.php">Blog <i
-                                                class="ion-ios-arrow-down"></i></a>
-                                            <ul class="hm-dropdown">
-                                                <li><a href="blog-left-sidebar.php">Grid View</a>
-                                                    <ul class="hm-dropdown hm-sub_dropdown">
-                                                        <li><a href="blog-2-column.php">Column Two</a></li>
-                                                        <li><a href="blog-3-column.php">Column Three</a></li>
-                                                        <li><a href="blog-left-sidebar.php">Left Sidebar</a></li>
-                                                        <li><a href="blog-right-sidebar.php">Right Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog-list-left-sidebar.php">List View</a>
-                                                    <ul class="hm-dropdown hm-sub_dropdown">
-                                                        <li><a href="blog-list-fullwidth.php">List Fullwidth</a></li>
-                                                        <li><a href="blog-list-left-sidebar.php">List Left Sidebar</a>
-                                                        </li>
-                                                        <li><a href="blog-list-right-sidebar.php">List Right
-                                                                Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog-details-left-sidebar.php">Blog Details</a>
-                                                    <ul class="hm-dropdown hm-sub_dropdown">
-                                                        <li><a href="blog-details-left-sidebar.php">Left Sidebar</a>
-                                                        </li>
-                                                        <li><a href="blog-details-right-sidebar.php">Right Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog-gallery-format.php">Blog Format</a>
-                                                    <ul class="hm-dropdown hm-sub_dropdown">
-                                                        <li><a href="blog-gallery-format.php">Gallery Format</a></li>
-                                                        <li><a href="blog-audio-format.php">Audio Format</a></li>
-                                                        <li><a href="blog-video-format.php">Video Format</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> -->
                                     </ul>
                                 </nav>
                             </div>
@@ -665,7 +441,7 @@ else{
                         <div class="col-sm-3 d-block d-lg-none">
                             <div class="header-logo_area header-sticky_logo">
                                 <a href="indexuser.php">
-                                    <img src="assets/images/menu/logo/3.png" alt="Uren's Logo">
+                                    <img src="../public/assets/images/menu/logo/3.png" alt="Uren's Logo">
                                 </a>
                             </div>
                         </div>
@@ -686,29 +462,19 @@ else{
                                                 <?php
                                                     include_once "temp_cart.php";
                                                     $cart = new temp_cart();
-                                                    // ob_start();
-                                                    // session_start();
                                                     $cart->setUserId($_SESSION['userid']);
-                                                    // echo($_SESSION['userid']);
                                                     $res = $cart->getCount();
                                                     if ($row = mysqli_fetch_assoc($res)) {
                                                        ?>
                                                             <span class="item-count"><?php echo($row['cartCount']) ?></span>
-
                                                        <?php
                                                     }
                                                 ?>
-
                                                 <i class="ion-bag"></i>
                                             </div>
-                                            <!-- <div class="minicart-front_text">
-                                                <span>Cart:</span>
-                                                <span class="total-price">462.4</span>
-                                            </div> -->
                                         </a>
                                     </li>
-                                    <li class="minicart-wrap" ><a href="myaccount.php" class="stickyNavUser"><img style="width:24px;height:24px;border-radius:50%;" src="assets/images/customer images/<?php echo($_SESSION['photo']);  ?>" alt=""> <span> <?php echo($_SESSION['username']);  ?>
-</span></a>
+                                    <li class="minicart-wrap" ><a href="custprofile.php" class="stickyNavUser"><img style="width:24px;height:24px;border-radius:50%;" src="../public/assets/images/customer/<?php echo($_SESSION['photo']);  ?>" alt=""> <span> <?php echo($_SESSION['username']);  ?></span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -741,23 +507,7 @@ else{
                                 <input type="hidden"name="pro"value="<?php echo($values['product_id']);?>">
                                 <input type="hidden"name="supp"value="<?php echo($values['supplier_id']);?>">
                                 <button type="submit" name="txtclose1<?php echo($x)?>"  class="product-item_remove"><i class="ion-android-close"></i></button>
-                                <!-- <input style="display: none" type="submit"  name="txtclose1<?php echo($x)?>" class="txtclose1<?php echo($x)?>"> -->
-                                 <!-- <i class="ion-android-close close1<?php echo($x)?>"></i> -->
-                                 <!-- <button> -->
-
                                 </a>
-
-                                <script>
-                                    //  $(document).ready(function(c) {
-                                    //             // remove product from cart
-                                    //             $('.close<?php echo($x)?>').on('click', function(c){
-                                    //                 $('.txtclose<?php echo($x)?>').click();
-                                    //                 $('.rem<?php echo($x)?>').fadeOut('slow', function(c){
-                                    //                     $('.rem<?php echo($x)?>').remove();
-                                    //                 });
-                                    //             });
-                                    //  });
-                                </script>
                                 <?php
                                 if(isset($_POST['txtclose1'.$x])){
                                     $cart->setProId($row['product_id']);
@@ -765,11 +515,7 @@ else{
                                     $cart->delete();
                                     header("Refresh:0");
                                 }
-
-
                                 ?>
-
-
                                 <div class="product-item_img">
                                     <?php
                                     include_once "products.php";
@@ -782,7 +528,7 @@ else{
                                             if($rowimg1['status'] == 'primary')
                                             {
                                     ?>
-                                    <img src="assets/images/product/small-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Image">
+                                    <img src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Image">
                                     <?php
                                         }
                                     }
@@ -887,46 +633,6 @@ else{
                                         </li>
                                     </ul>
                                 </li>
-                                <!-- <li class="menu-item-has-children"><a href="javascript:void(0)"><span
-                                        class="mm-text">Currency</span></a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="mm-text">EUR €</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="mm-text">USD $</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li> -->
-                                <!-- <li class="menu-item-has-children"><a href="javascript:void(0)"><span
-                                        class="mm-text">Language</span></a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="mm-text">English</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="mm-text">Arabic</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="mm-text">Romanian</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="mm-text">Japanese</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li> -->
                             </ul>
                         </nav>
                     </div>

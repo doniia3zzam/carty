@@ -82,7 +82,7 @@
                         <div class="col-xl-3 col-lg-2 col-md-3 col-sm-5">
                             <div class="header-logo_area">
                                 <a href="index.php">
-                                    <img src="assets/images/menu/logo/2.png" alt="Carty Logo" >
+                                    <img src="../public/assets/images/menu/logo/2.png" alt="Carty Logo" >
                                 </a>
                             </div>
                         </div>
@@ -377,7 +377,7 @@
                         <div class="col-sm-3 d-block d-lg-none">
                             <div class="header-logo_area header-sticky_logo">
                                 <a href="index.php">
-                                    <img src="assets/images/menu/logo/3.png" alt="Uren's Logo">
+                                    <img src="../public/assets/images/menu/logo/3.png" alt="Uren's Logo">
                                 </a>
                             </div>
                         </div>
@@ -448,7 +448,7 @@
                                             if($rowimg1['status'] == 'primary')
                                             {
                                     ?>
-                                    <img src="assets/images/product/small-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Image">
+                                    <img src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Image">
                                     <?php
                                         }
                                     }

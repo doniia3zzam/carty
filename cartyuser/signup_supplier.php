@@ -1,6 +1,11 @@
 <?php
 ob_start();
-include "headerbefore.php";
+session_start();
+if(isset($_SESSION['username'])){
+    include "headerafter.php";
+}else{
+    include "headerbefore.php";
+}
 ?>
 <style>
   /* show and hide password */

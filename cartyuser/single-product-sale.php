@@ -57,19 +57,19 @@ if(isset($_SESSION['username'])){
                                             if($row['status'] == 'primary')
                                             {
                                         ?>
-                                        <img src="assets/images/product/large-size/<?php echo($row['image_name']) ?>" alt="Uren's Product Image">
+                                        <img src="../public/assets/images/products/<?php echo($row['image_name']) ?>" alt="Uren's Product Image">
                                         <?php
                                             }
                                             if($row['status'] == 'secondary')
                                             {
                                         ?>
-                                        <img src="assets/images/product/large-size/<?php echo($row['image_name']) ?>" alt="Uren's Product Image">
+                                        <img src="../public/assets/images/products/<?php echo($row['image_name']) ?>" alt="Uren's Product Image">
                                         <?php
                                             }
                                             if($row['status'] == 'others')
                                             {
                                         ?>
-                                        <img src="assets/images/product/large-size/<?php echo($row['image_name']) ?>" alt="Uren's Product Image">
+                                        <img src="../public/assets/images/products/<?php echo($row['image_name']) ?>" alt="Uren's Product Image">
                                         <?php
                                             }
                                         ?>
@@ -103,19 +103,19 @@ if(isset($_SESSION['username'])){
                                             if($row['status'] == 'primary')
                                             {
                                         ?>
-                                        <img src="assets/images/product/small-size/<?php echo($row['image_name']) ?>" alt="Uren's Product Thumnail">
+                                        <img src="../public/assets/images/products/<?php echo($row['image_name']) ?>" alt="Uren's Product Thumnail">
                                         <?php
                                             }
                                             if($row['status'] == 'secondary')
                                             {
                                         ?>
-                                        <img src="assets/images/product/small-size/<?php echo($row['image_name']) ?>" alt="Uren's Product Thumnail">
+                                        <img src="../public/assets/images/products/<?php echo($row['image_name']) ?>" alt="Uren's Product Thumnail">
                                          <?php
                                             }
                                             if($row['status'] == 'others')
                                             {
                                         ?>
-                                        <img src="assets/images/product/small-size/<?php echo($row['image_name']) ?>" alt="Uren's Product Thumnail">
+                                        <img src="../public/assets/images/products/<?php echo($row['image_name']) ?>" alt="Uren's Product Thumnail">
                                         <?php
                                             }
                                         ?>
@@ -370,7 +370,7 @@ if(isset($_SESSION['username'])){
                                                                         // $rate = $pro->getrating();
                                                                         // $r=0;
                                                                         // if($ratevalue=mysqli_fetch_assoc($rate))
-                                                                        //     $r=$ratevalue['average'];
+                                                                            // $r=$ratevalue['average'];
                                                                             for($x=0;$x<$row['value'];$x++)
                                                                                 {
                                                                         ?>
@@ -458,13 +458,13 @@ if(isset($_SESSION['username'])){
                                                 if($rowss['status'] == 'primary')
                                                     {
                                                     ?>
-                                            <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowss['image_name']) ?>" alt="Uren's Product Image">
+                                            <img class="primary-img" src="../public/assets/images/products/<?php echo($rowss['image_name']) ?>" alt="Uren's Product Image">
                                             <?php
                                                 }
                                                 if($rowss['status'] == 'secondary')
                                                 {
                                                 ?>
-                                            <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowss['image_name']) ?>" alt="Uren's Product Image">
+                                            <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowss['image_name']) ?>" alt="Uren's Product Image">
                                             <?php
                                                     }
                                             }
@@ -578,13 +578,13 @@ if(isset($_SESSION['username'])){
                                                 if($rowsss['status'] == 'primary')
                                                     {
                                                     ?>
-                                            <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowsss['image_name']) ?>" alt="Uren's Product Image">
+                                            <img class="primary-img" src="../public/assets/images/products/<?php echo($rowsss['image_name']) ?>" alt="Uren's Product Image">
                                             <?php
                                                 }
                                                 if($rowsss['status'] == 'secondary')
                                                 {
                                                 ?>
-                                            <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowsss['image_name']) ?>" alt="Uren's Product Image">
+                                            <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowsss['image_name']) ?>" alt="Uren's Product Image">
                                             <?php
                                                     }
                                             }
@@ -684,7 +684,7 @@ if(isset($_SESSION['username'])){
                                 <div class="inner-slide">
                                     <div class="single-product">
                                         <a href="allproducts.php?brand_id=<?php echo($rowbr['brand_id']) ?>">
-                                            <img width="170px" height="150px" src="assets/images/brand/<?php echo($rowbr['brand_image'])?>" alt="<?php echo($rowbr['brand_name'])?>"
+                                            <img width="170px" height="150px" src="../public/assets/images/brands/<?php echo($rowbr['brand_image'])?>" alt="<?php echo($rowbr['brand_name'])?>"
                                             title="<?php echo($rowbr['brand_name'])?>">
                                         </a>
                                     </div>
