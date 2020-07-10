@@ -1,0 +1,62 @@
+/*%%%%%%%%%%%%%%%%%%%%%%% New CONTROLLERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+php artisan make:controller all_customers_controller --resource
+
+php artisan make:controller all_cities_controller --resource
+
+php artisan make:controller all_payments_controller --resource
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%% Old ROUTES + updated %%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+Route::resources([
+    'product' 		=> 'all_products_controller',
+    'supplier' 		=> 'all_suppliers_controller', 
+    'brand' 		=> 'all_brands_controller',
+    'model' 		=> 'all_models_controller',
+    'category' 		=> 'all_categories_controller',
+    'sub_category' 	=> 'all_sub_categories_controller',
+    'offer' 		=> 'all_offers_controller',
+    'order' 		=> 'all_orders_controller',
+    'admin' 		=> 'all_admins_controller',
+    'permisssion' 	=> 'all_permissions_controller',
+    'supp_pro' 		=> 'supplier_controller',
+	'customer' 		=> 'all_customers_controller',
+    'city' 			=> 'all_cities_controller',
+    'payment' 		=> 'all_payments_controller'
+    
+]);
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%% VIEW FOLDERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+layouts
+
+all_products
+
+all_suppliers
+
+all_brands
+
+all_models
+
+all_categories
+
+all_sub_categories
+
+all_offers
+
+all_orders
+
+all_admins
+
+all_permissions
+
+supplier
+
+==========>>>>> new folders <<<<<============
+
+all_customers
+
+all_cities
+
+all_payments

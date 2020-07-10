@@ -1,0 +1,67 @@
+/*%%%%%%%%%%%%%%%%%%%%%%% CONTROLLERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+php artisan make:controller all_products_controller --resource
+
+php artisan make:controller all_suppliers_controller --resource
+
+php artisan make:controller all_brands_controller --resource
+
+php artisan make:controller all_models_controller --resource
+
+php artisan make:controller all_categories_controller --resource
+
+php artisan make:controller all_sub_categories_controller --resource
+
+php artisan make:controller all_offers_controller --resource
+
+php artisan make:controller all_orders_controller --resource
+
+php artisan make:controller all_admins_controller --resource
+
+php artisan make:controller all_permissions_controller --resource
+
+php artisan make:controller supplier_controller --resource
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%% ROUTES %%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+Route::resources([
+    'product' 		=> 'all_products_controller',
+    'supplier' 		=> 'all_suppliers_controller', 
+    'brand' 		=> 'all_brands_controller',
+    'model' 		=> 'all_models_controller',
+    'category' 		=> 'all_categories_controller',
+    'sub_category' 	=> 'all_sub_categories_controller',
+    'offer' 		=> 'all_offers_controller',
+    'order' 		=> 'all_orders_controller',
+    'admin' 		=> 'all_admins_controller',
+    'permisssion' 	=> 'all_permissions_controller',
+    'supp_pro' 		=> 'supplier_controller'
+    
+]);
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%% VIEW FOLDERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+layouts
+
+all_products
+
+all_suppliers
+
+all_brands
+
+all_models
+
+all_categories
+
+all_sub_categories
+
+all_offers
+
+all_orders
+
+all_admins
+
+all_permissions
+
+supplier
+
