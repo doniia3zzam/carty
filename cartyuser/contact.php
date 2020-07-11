@@ -42,7 +42,7 @@ if(isset($_SESSION['username'])){
                             // echo("hello");
                             if(isset($_POST['contact'])){
 
-                                $mailTo="doniaalaa56@gmail.com";
+                                $mailTo="galal.husseny@gmail.com";
                                 $message = ``;
                                 unset($_POST['contact']);
 
@@ -61,10 +61,10 @@ if(isset($_SESSION['username'])){
                                 $mail->Port = 465; // or 587
                                 $mail->IsHTML(true);
                         
-                                $mail->Username = "yourmobileapp2017@gmail.com";
-                                $mail->Password = "ABC@123456bb";
+                                $mail->Username = "carspares54@gmail.com";
+                                $mail->Password = "DG@123456";
                         
-                                $mail->setFrom('yourmobileapp2017@gmail.com', 'Contact Us Message');
+                                $mail->setFrom('carspares54@gmail.com', 'Contact Us Message');
                                 $mail->addAddress($mailTo, "");
                             
 

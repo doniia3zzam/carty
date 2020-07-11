@@ -152,7 +152,7 @@ $pro->setrecord($record_per_page);
                         <div class="sidebar-banner_area">
                             <div class="banner-item img-hover_effect">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/shop/1.jpg" alt="Uren's Shop Banner Image">
+                                    <img src="../public/assets/images/shop/1.jpg" alt="Uren's Shop Banner Image">
                                 </a>
                             </div>
                         </div>
@@ -230,13 +230,13 @@ $pro->setrecord($record_per_page);
                                                                     if($rowimg1['status'] == 'primary')
                                                                     {
                                                                 ?>
-                                                                    <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }
                                                                         if($rowimg1['status'] == 'secondary')
                                                                         {
                                                                     ?>
-                                                                    <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }?>
 
@@ -312,13 +312,13 @@ $pro->setrecord($record_per_page);
                                                                         if($rowimg2['status'] == 'primary')
                                                                         {
                                                                     ?>
-                                                                        <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }
                                                                             if($rowimg2['status'] == 'secondary')
                                                                             {
                                                                         ?>
-                                                                        <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }?>
 
@@ -412,13 +412,13 @@ $pro->setrecord($record_per_page);
                                                                     if($rowimg1['status'] == 'primary')
                                                                     {
                                                                 ?>
-                                                                    <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }
                                                                         if($rowimg1['status'] == 'secondary')
                                                                         {
                                                                     ?>
-                                                                    <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }?>
 
@@ -494,13 +494,13 @@ $pro->setrecord($record_per_page);
                                                                         if($rowimg2['status'] == 'primary')
                                                                         {
                                                                     ?>
-                                                                        <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }
                                                                             if($rowimg2['status'] == 'secondary')
                                                                             {
                                                                         ?>
-                                                                        <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }?>
 
@@ -593,13 +593,13 @@ $pro->setrecord($record_per_page);
                                                                     if($rowimg1['status'] == 'primary')
                                                                     {
                                                                 ?>
-                                                                    <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }
                                                                         if($rowimg1['status'] == 'secondary')
                                                                         {
                                                                     ?>
-                                                                    <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }?>
 
@@ -675,13 +675,13 @@ $pro->setrecord($record_per_page);
                                                                         if($rowimg2['status'] == 'primary')
                                                                         {
                                                                     ?>
-                                                                        <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }
                                                                             if($rowimg2['status'] == 'secondary')
                                                                             {
                                                                         ?>
-                                                                        <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }?>
 
@@ -774,13 +774,13 @@ $pro->setrecord($record_per_page);
                                                                     if($rowimg1['status'] == 'primary')
                                                                     {
                                                                 ?>
-                                                                    <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }
                                                                         if($rowimg1['status'] == 'secondary')
                                                                         {
                                                                     ?>
-                                                                    <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }?>
 
@@ -856,13 +856,13 @@ $pro->setrecord($record_per_page);
                                                                         if($rowimg2['status'] == 'primary')
                                                                         {
                                                                     ?>
-                                                                        <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }
                                                                             if($rowimg2['status'] == 'secondary')
                                                                             {
                                                                         ?>
-                                                                        <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }?>
 
@@ -955,13 +955,13 @@ $pro->setrecord($record_per_page);
                                                                     if($rowimg1['status'] == 'primary')
                                                                     {
                                                                 ?>
-                                                                    <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }
                                                                         if($rowimg1['status'] == 'secondary')
                                                                         {
                                                                     ?>
-                                                                    <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }?>
 
@@ -1037,13 +1037,13 @@ $pro->setrecord($record_per_page);
                                                                         if($rowimg2['status'] == 'primary')
                                                                         {
                                                                     ?>
-                                                                        <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }
                                                                             if($rowimg2['status'] == 'secondary')
                                                                             {
                                                                         ?>
-                                                                        <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }?>
 
@@ -1134,13 +1134,13 @@ $pro->setrecord($record_per_page);
                                                                     if($rowimg1['status'] == 'primary')
                                                                     {
                                                                 ?>
-                                                                    <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }
                                                                         if($rowimg1['status'] == 'secondary')
                                                                         {
                                                                     ?>
-                                                                    <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                    <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                     <?php
                                                                         }?>
 
@@ -1216,13 +1216,13 @@ $pro->setrecord($record_per_page);
                                                                         if($rowimg2['status'] == 'primary')
                                                                         {
                                                                     ?>
-                                                                        <img class="primary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="primary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }
                                                                             if($rowimg2['status'] == 'secondary')
                                                                             {
                                                                         ?>
-                                                                        <img class="secondary-img" src="assets/images/product/large-size/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
+                                                                        <img class="secondary-img" src="../public/assets/images/products/<?php echo($rowimg2['image_name']) ?>" alt="Uren's Product Thumnail">
                                                                         <?php
                                                                             }?>
 
@@ -1311,7 +1311,7 @@ $pro->setrecord($record_per_page);
                                                     for($i=1;$i<=$total_pages;$i++){
                                                         ?>
                                                              <!-- <li class="active"><a href="javascript:void(0)">1</a></li> -->
-                                                            <li class = "<?php if($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?cate=<?php echo($_GET['cate']) ?>&sub=<?php echo($_GET['sub']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
+                                                            <li class = "<?php if(!isset($_GET['page']) && $i ==1){echo('active');}elseif($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?cate=<?php echo($_GET['cate']) ?>&sub=<?php echo($_GET['sub']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
                                                         <?php
                                                     }
 
@@ -1322,7 +1322,7 @@ $pro->setrecord($record_per_page);
                                                     for($i=1;$i<=$total_pages;$i++){
                                                         ?>
                                                              <!-- <li class="active"><a href="javascript:void(0)">1</a></li> -->
-                                                            <li class = "<?php if($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?cate=<?php echo($_GET['cate']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
+                                                            <li class = "<?php if(!isset($_GET['page']) && $i ==1){echo('active');}elseif($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?cate=<?php echo($_GET['cate']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
                                                         <?php
                                                     }
 
@@ -1332,7 +1332,7 @@ $pro->setrecord($record_per_page);
                                                     for($i=1;$i<=$total_pages;$i++){
                                                         ?>
                                                              <!-- <li class="active"><a href="javascript:void(0)">1</a></li> -->
-                                                            <li class = "<?php if($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?key=<?php echo($_GET['key']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
+                                                            <li class = "<?php if(!isset($_GET['page']) && $i ==1){echo('active');}elseif($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?key=<?php echo($_GET['key']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
                                                         <?php
                                                     }
                                                 }
@@ -1341,7 +1341,7 @@ $pro->setrecord($record_per_page);
                                                     for($i=1;$i<=$total_pages;$i++){
                                                         ?>
                                                              <!-- <li class="active"><a href="javascript:void(0)">1</a></li> -->
-                                                            <li class = "<?php if($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?brand_id=<?php echo($_GET['brand_id']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
+                                                            <li class = "<?php if(!isset($_GET['page']) && $i ==1){echo('active');}elseif($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?brand_id=<?php echo($_GET['brand_id']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
                                                         <?php
                                                     }
                                                 }
@@ -1350,14 +1350,14 @@ $pro->setrecord($record_per_page);
                                                     for($i=1;$i<=$total_pages;$i++){
                                                         ?>
                                                              <!-- <li class="active"><a href="javascript:void(0)">1</a></li> -->
-                                                            <li class = "<?php if($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?off=<?php echo($_GET['off']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
+                                                            <li class = "<?php if(!isset($_GET['page']) && $i ==1){echo('active');}elseif($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?off=<?php echo($_GET['off']) ?>&page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
                                                         <?php
                                                     }
                                                 }else{
                                                     for($i=1;$i<=$total_pages;$i++){
                                                         ?>
                                                              <!-- <li class="active"><a href="javascript:void(0)">1</a></li> -->
-                                                            <li class = "<?php if($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
+                                                            <li class = "<?php if(!isset($_GET['page']) && $i ==1){echo('active');}elseif($i == $_GET['page']){echo('active');} ?>"><a  href="allproducts.php?page=<?php echo($i) ?>"><?php echo($i) ?></a></li>
                                                         <?php
                                                     }
                                                 }

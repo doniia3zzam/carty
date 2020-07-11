@@ -1,6 +1,11 @@
 <?php
 ob_start();
-include "headerbefore.php";
+session_start();
+if(isset($_SESSION['username'])){
+    include "headerafter.php";
+}else{
+    include "headerbefore.php";
+}
 ?>
 <style>
     .all{
@@ -34,11 +39,11 @@ include "headerbefore.php";
                             <div class="form-group text-center">
                                 <h4 class="login-title">Sign in to your account</h4>
                             </div>
-                            
+
                             <div class="row text-center">
                                 <div class="col-md-12 col-12">
                                     <div class="form-group">
-                                        <a href="http://localhost:803/laravel/carty/carty" class="btn btn-warning form-control">Seller Login</a>
+                                        <a href="http://localhost/final_pro/cartyAdminn" class="btn btn-warning form-control">Seller Login</a>
                                     </div>
                                 </div>
                                 <div class="col-12">

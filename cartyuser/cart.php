@@ -7,7 +7,7 @@ if(isset($_SESSION['username'])){
 }else{
     include "headerbefore.php";
     // header("Refresh:0");
-    } 
+    }
     ?>
     <!-- Begin Uren's Breadcrumb Area -->
     <!-- <div class="breadcrumb-area">
@@ -45,7 +45,7 @@ if(isset($_SESSION['username'])){
                                 <?php
 
                                             if(isset($_SESSION['username'])){
-                                                    /* add to cart from index hadeer */ 
+                                                    /* add to cart from index hadeer */
                                                     include_once "products.php";
                                                     $single = new products();
                                                     if (isset($_GET['pro']) && isset($_GET['supp']) ) {
@@ -56,7 +56,7 @@ if(isset($_SESSION['username'])){
                                                         if($rows= mysqli_fetch_assoc($result)) {
 
                                                                     include_once "temp_cart.php";
-                                                                    $cart = new temp_cart(); 
+                                                                    $cart = new temp_cart();
                                                                     $cart->setProId($_GET['pro']);
                                                                     $cart->setSuppId($_GET['supp']);
                                                                     $cart->setUserId($_SESSION['userid']);
@@ -71,14 +71,14 @@ if(isset($_SESSION['username'])){
 
                                                         }
                                                     }
-                                                    /* end add to cart from index hadeer */ 
+                                                    /* end add to cart from index hadeer */
 
                                                 include_once "temp_cart.php";
-                                                $cart = new temp_cart(); 
+                                                $cart = new temp_cart();
                                                 $cart->setUserId($_SESSION['userid']);
                                                 $res = $cart->getAll();
                                                 $x= 1;
-                                                $total = 0; 
+                                                $total = 0;
                                                 while($row = mysqli_fetch_assoc($res))
                                                 {
 
@@ -92,7 +92,7 @@ if(isset($_SESSION['username'])){
                                                     $single->setProId($row['product_id']);
                                                     $single->setSuppId($row['supplier_id']);
                                                     $pic1 = $single->getSingleProductImages();
-                                                    if ($rowi = mysqli_fetch_assoc($pic1)) 
+                                                    if ($rowi = mysqli_fetch_assoc($pic1))
                                                     {
                                                 ?>
                                                 <a href="single-product-sale.php?pro=<?php echo($row['product_id']) ?>&supp=<?php echo($row['supplier_id']) ?>">
@@ -100,7 +100,7 @@ if(isset($_SESSION['username'])){
                                                         if($rowi['status'] == 'primary')
                                                         {
                                                         ?>
-                                                        <img src="assets/images/product/small-size/<?php echo($rowi['image_name']) ?>" alt="Uren's Cart Thumbnail" style="width: 100px; height:100px">
+                                                        <img src="../public/assets/images/products/<?php echo($rowi['image_name']) ?>" alt="Uren's Cart Thumbnail" style="width: 100px; height:100px">
                                                         <?php
                                                     }
                                                 ?>
@@ -135,14 +135,14 @@ if(isset($_SESSION['username'])){
                                     </tr>
                                     <script>
                                         $(document).ready(function(c) {
-                                            // remove product from cart 
+                                            // remove product from cart
                                             $('.close<?php echo($x)?>').on('click', function(c) {
                                                 $('.txtclose<?php echo($x)?>').click();
                                                 $('.rem<?php echo($x)?>').fadeOut('slow', function(c) {
                                                     $('.rem<?php echo($x)?>').remove();
                                                 });
                                             });
-                                            // update quantity on keyup 
+                                            // update quantity on keyup
                                             $('#quantity<?php echo($x)?>').on({
                                                 keyup: function() {
                                                     var quantity = $(this).val();
@@ -152,7 +152,7 @@ if(isset($_SESSION['username'])){
 
                                                 }
                                             });
-                                            // update quantity on click 
+                                            // update quantity on click
                                             $('#inc<?php echo($x)?>,#dec<?php echo($x)?>').on({
                                                 click: function() {
                                                     var quantity = $('#quantity<?php echo($x)?>').val();
@@ -178,9 +178,9 @@ if(isset($_SESSION['username'])){
 
                                         $x++;
                                         }
-                                    }else 
+                                    }else
                                     {
-                                    /* add to cart from index hadeer */ 
+                                    /* add to cart from index hadeer */
                                     include_once "products.php";
                                     $single = new products();
                                     $total=0;
@@ -246,16 +246,16 @@ if(isset($_SESSION['username'])){
                                                     <a href="single-product-sale.php?pro=<?php echo($values['product_id']) ?>&supp=<?php echo($values['supplier_id']) ?>">
                                                         <?php
                                                 include_once "products.php";
-                                                $pro = new products(); 
+                                                $pro = new products();
                                                 $pro->setProId($values['product_id']);
                                                 $pro->setSuppId($values['supplier_id']);
                                                 $pic1 = $pro->getSingleProductImages();
-                                                if ($rowimg1 = mysqli_fetch_assoc($pic1)) 
+                                                if ($rowimg1 = mysqli_fetch_assoc($pic1))
                                                 {
                                                     if($rowimg1['status'] == 'primary')
                                                     {
                                                 ?>
-                                                            <img src="assets/images/product/small-size/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Cart Thumbnail" style="width:100px; height:100px;">
+                                                            <img src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" alt="Uren's Cart Thumbnail" style="width:100px; height:100px;">
                                                             <?php
                                                     }
                                                 }
@@ -320,7 +320,7 @@ if(isset($_SESSION['username'])){
                                 </div>
                                 <form method="post" id="form">
                                             <div class="coupon2">
-                                                <?php 
+                                                <?php
                                             //    echo($x);
                                                 for($i = 1 ; $i<$x ;$i++){
                                                     ?>
@@ -339,7 +339,7 @@ if(isset($_SESSION['username'])){
                                                                 var testsupp = $('#supp<?php echo($i) ?>').val();
                                                                 $('#supp_id<?php echo($i) ?>').val(testsupp);
                                                             });
-                                                           
+
                                                         });
 
                                                     </script>
@@ -355,7 +355,7 @@ if(isset($_SESSION['username'])){
                                                         $up = $qty->updateqty();
                                                         if($up == 'ok'){
                                                             echo($up);
-                                                            
+
                                                         }
                                                         else{
                                                             echo($up);
@@ -406,6 +406,6 @@ if(isset($_SESSION['username'])){
                 $('.rem1').fadeOut('slow', function(c){
                     $('.rem1').remove();
                 });
-                });	  
+                });
             });
         </script> -->

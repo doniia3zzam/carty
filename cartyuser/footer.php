@@ -7,7 +7,7 @@
                             <div class="footer-widgets_info">
                                 <div class="footer-widgets_logo">
                                     <a href="#">
-                                        <img src="assets/images/menu/logo/1.png" alt="Uren's Footer Logo" style="width: 200px;height:70px">
+                                        <img src="../public/assets/images/menu/logo/1.png" alt="Uren's Footer Logo" style="width: 200px;height:70px">
                                     </a>
                                 </div>
                                 <div class="widget-short_desc">
@@ -62,8 +62,8 @@
                                         </div>
                                         <div class="footer-widgets">
                                             <ul>
-                                                <li><a href="javascript:void(0)">About Us</a></li>
-                                                <li><a href="javascript:void(0)">Delivery Information</a></li>
+                                                <li><a href="about-us.php">About Us</a></li>
+                                                <li><a href="faq.php">FAQ</a></li>
                                                 <li><a href="javascript:void(0)">Privacy Policy</a></li>
                                                 <li><a href="javascript:void(0)">Terms & Conditions</a></li>
                                             </ul>
@@ -75,22 +75,9 @@
                                         </div>
                                         <div class="footer-widgets">
                                             <ul>
-                                                <li><a href="javascript:void(0)">Contact Us</a></li>
+                                                <li><a href="contact.php">Contact Us</a></li>
                                                 <li><a href="javascript:void(0)">Returns</a></li>
                                                 <li><a href="javascript:void(0)">Site Map</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="footer-widgets_title">
-                                            <h3>Extras</h3>
-                                        </div>
-                                        <div class="footer-widgets">
-                                            <ul>
-                                                <li><a href="javascript:void(0)">About Us</a></li>
-                                                <li><a href="javascript:void(0)">Delivery Information</a></li>
-                                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                                                <li><a href="javascript:void(0)">Terms & Conditions</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -101,9 +88,8 @@
                                         <div class="footer-widgets">
                                             <ul>
                                                 <li><a href="javascript:void(0)">My Account</a></li>
-                                                <li><a href="javascript:void(0)">Order History</a></li>
-                                                <li><a href="javascript:void(0)">Wish List</a></li>
-                                                <li><a href="javascript:void(0)">Newsletter</a></li>
+                                                <li><a href="myorders.php">Order History</a></li>
+                                                <li><a href="wishlist.php">Wish List</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -125,7 +111,7 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="payment">
                                     <a href="#">
-                                        <img src="assets/images/footer/payment/1.png" alt="Uren's Payment Method">
+                                        <img src="../public/assets/images/footer/payment/1.png" alt="Uren's Payment Method">
                                     </a>
                                 </div>
                             </div>
@@ -155,22 +141,22 @@
                                     "asNavFor": ".sp-img_slider-nav"
                                     }'>
                                         <div class="single-slide red">
-                                            <img src="assets/images/product/large-size/1.jpg" alt="Uren's Product Image">
+                                            <img src="../public/assets/images/product/1.jpg" alt="Uren's Product Image">
                                         </div>
                                         <div class="single-slide orange">
-                                            <img src="assets/images/product/large-size/2.jpg" alt="Uren's Product Image">
+                                            <img src="../public/assets/images/product/2.jpg" alt="Uren's Product Image">
                                         </div>
                                         <div class="single-slide brown">
-                                            <img src="assets/images/product/large-size/3.jpg" alt="Uren's Product Image">
+                                            <img src="../public/assets/images/product/3.jpg" alt="Uren's Product Image">
                                         </div>
                                         <div class="single-slide umber">
-                                            <img src="assets/images/product/large-size/4.jpg" alt="Uren's Product Image">
+                                            <img src="../public/assets/images/product/4.jpg" alt="Uren's Product Image">
                                         </div>
                                         <div class="single-slide black">
-                                            <img src="assets/images/product/large-size/5.jpg" alt="Uren's Product Image">
+                                            <img src="../public/assets/images/product/5.jpg" alt="Uren's Product Image">
                                         </div>
                                         <div class="single-slide golden">
-                                            <img src="assets/images/product/large-size/6.jpg" alt="Uren's Product Image">
+                                            <img src="../public/assets/images/product/6.jpg" alt="Uren's Product Image">
                                         </div>
                                     </div>
                                     <div class="sp-img_slider-nav slick-slider-nav uren-slick-slider slider-navigation_style-3" data-slick-options='{
@@ -186,22 +172,22 @@
                                     {"breakpoint":575, "settings": {"slidesToShow": 2}}
                                 ]'>
                                         <div class="single-slide red">
-                                            <img src="assets/images/product/small-size/1.jpg" alt="Uren's Product Thumnail">
+                                            <img src="../public/assets/images/product/1.jpg" alt="Uren's Product Thumnail">
                                         </div>
                                         <div class="single-slide orange">
-                                            <img src="assets/images/product/small-size/2.jpg" alt="Uren's Product Thumnail">
+                                            <img src="../public/assets/images/product/2.jpg" alt="Uren's Product Thumnail">
                                         </div>
                                         <div class="single-slide brown">
-                                            <img src="assets/images/product/small-size/3.jpg" alt="Uren's Product Thumnail">
+                                            <img src="../public/assets/images/product/3.jpg" alt="Uren's Product Thumnail">
                                         </div>
                                         <div class="single-slide umber">
-                                            <img src="assets/images/product/small-size/4.jpg" alt="Uren's Product Thumnail">
+                                            <img src="../public/assets/images/product/4.jpg" alt="Uren's Product Thumnail">
                                         </div>
                                         <div class="single-slide black">
-                                            <img src="assets/images/product/small-size/5.jpg" alt="Uren's Product Thumnail">
+                                            <img src="../public/assets/images/product/5.jpg" alt="Uren's Product Thumnail">
                                         </div>
                                         <div class="single-slide golden">
-                                            <img src="assets/images/product/small-size/6.jpg" alt="Uren's Product Thumnail">
+                                            <img src="../public/assets/images/product/6.jpg" alt="Uren's Product Thumnail">
                                         </div>
                                     </div>
                                 </div>

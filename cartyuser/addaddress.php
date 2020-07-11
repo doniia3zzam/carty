@@ -5,7 +5,7 @@ if(isset($_SESSION['username'])){
     include "headerafter.php";
 
 ?>
-    <?php
+    <?php 
     if(isset($_POST["addrs"])){
         include_once "address.php";
         $addrs=new address();
@@ -124,20 +124,20 @@ if(isset($_SESSION['username'])){
                     </div>
                 </form>
                 </div>
-
+                
                 <div class="col-6 text-center">
                     <?php
                     if(isset($_POST['addLoc'])){
-
+                      
                         include_once "address.php";
                         $Add = new address();
                         $res = $Add->AddLoc($_POST['phone'],$_POST['addressType'],$_POST['long'],$_POST['lat'],$_SESSION['userid']);
                         if($res == 'ok'){
                             ?>
                                 <div class="alert alert-success text-center"> You Have added a new location </div>
-
+                                
                            <?php
-
+                            
                             header("Refresh:10; url=myaccount.php");
                         }
                         else{
@@ -146,8 +146,8 @@ if(isset($_SESSION['username'])){
                                  <div class="alert alert-danger text-center">This Phone is already exist </div>
                             <?php
                         }
-
-
+                            
+                        
                     }
                     // echo('hello');
                     ?>
@@ -176,16 +176,16 @@ if(isset($_SESSION['username'])){
                                     <br>
                                     <div class="row">
                                         <div class="col-6">
-                                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter Phone Number" required>
+                                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter Phone Number" required> 
                                         </div>
                                         <div class=" col-6">
-                                             <input type="text" name="addressType" id="addressType" class="form-control" placeholder="Enter Address Type"required>
+                                             <input type="text" name="addressType" id="addressType" class="form-control" placeholder="Enter Address Type"required>   
                                         </div>
-
+                                        
                                         <input type="hidden" name="lat" id="inputLat" required>
                                         <input type="hidden" name="long" id="inputLong" required>
                                         <script>
-
+                                           
                                             function Validation()
                                             {
 
@@ -201,7 +201,7 @@ if(isset($_SESSION['username'])){
 
                                                 return true;
                                             }
-
+                                            
                                         </script>
                                     </div>
                                 </div>
@@ -215,17 +215,17 @@ if(isset($_SESSION['username'])){
                         </div>
                     </div>
                     <!-- <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyChs2QWiAhnzz0a4OEhzqCXwx_qA9ST_lE"></script> -->
-                    <!-- <script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyDS5AwUrTwTyRSjOA3KFWFnGFVe-6v8UOM"></script> -->
-                    <script src="assets/js/SetMarkerGMap.js"></script>
+                    <script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyDS5AwUrTwTyRSjOA3KFWFnGFVe-6v8UOM"></script>
+                    <script src="assets/js/SetMarkerGMap.js"></script>                       
                 </div>
             </div>
         </div>
+        
 
+        
 
-
-
-        <?php
+        <?php 
 }else{
     header("location:index.php");
-    }
+    } 
 include "footer.php"; ?>

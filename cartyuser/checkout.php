@@ -30,13 +30,13 @@ if(isset($_SESSION['username'])){
                                 <div class="coupon-info">
                                 <?php
 
-                                  
+
                                         // echo($_SESSION['userid']);
                                         include_once "customer.php";
                                         $cust = new customer();
                                         $cust->setId($_SESSION['userid']);
                                         $result = $cust->getaddress();
-                                        
+
                                        $row = mysqli_fetch_assoc($result) ;
                                             // echo("hello");
                                             // $addressID = '';
@@ -83,12 +83,12 @@ if(isset($_SESSION['username'])){
                             <h3>ship to your adress</h3>
                             <div>
                                 <table class="table">
-                                    
+
                                         <tr>
                                             <th class="cart-product-name">Username</th>
                                             <td class="cart-product-total"><?php echo($_SESSION['username']) ?></td>
                                         </tr>
-                                   
+
                                         <tr class="cart_item">
                                             <th class="cart-product-name">Phone </th>
                                             <td class="cart-product-total"><?php echo($row['phone']) ?></td>
@@ -110,20 +110,20 @@ if(isset($_SESSION['username'])){
                                             </tr>
                                             <?php
                                         } ?>
-                                   
-                                  
+
+
                                 </table>
                             </div>
-                            
+
                                     <div class="bg-dark form-control text-center">
-                                        
+
                                     <a href="myaccount.php?check=1">change address</a>
-                                       
+
                                     </div>
                         </div>
                     </div>
-                        
-                   
+
+
                     <div class="col-lg-6 col-12">
                         <div class="your-order">
                             <h3>Your order</h3>
@@ -169,29 +169,29 @@ if(isset($_SESSION['username'])){
                                             $cart->setUserId($_SESSION['userid']);
                                             $res = $cart->getAll();
                                             $x= 1;
-                                            $total = 0; 
+                                            $total = 0;
                                             // $finalTotal = 0;
                                             while($row = mysqli_fetch_assoc($res)){
 
-                                            
+
                                         ?>
                                         <tr class="cart_item">
                                             <td class="cart-product-total"> <?php echo($row['product_id']) ?></td>
-                                            <td class="cart-product-total"> 
+                                            <td class="cart-product-total">
                                             <?php
-                                                
+
                                                 include_once "products.php";
-                                                $pro = new products(); 
+                                                $pro = new products();
                                                 $pro->setProId($row['product_id']);
                                                 $pro->setSuppId($row['supplier_id']);
                                                 $pic1 = $pro->getSingleProductImages();
-                                                if ($rowimg1 = mysqli_fetch_assoc($pic1)) 
+                                                if ($rowimg1 = mysqli_fetch_assoc($pic1))
                                                 {
-                                                    
+
                                                         if($rowimg1['status'] == 'primary')
                                                             {
                                                     ?>
-                                                     <img src="assets/images/product/small-size/<?php echo($rowimg1['image_name']) ?>" style="width:50px; height:50px;" alt="Uren's Cart Thumbnail">
+                                                     <img src="../public/assets/images/products/<?php echo($rowimg1['image_name']) ?>" style="width:50px; height:50px;" alt="Uren's Cart Thumbnail">
                                                 <?php
                                                             }
                                                         }
@@ -202,9 +202,9 @@ if(isset($_SESSION['username'])){
                                             <td class="cart-product-total"> <?php echo($row['price'].' EGP') ?></td>
                                             <?php $total+=$row['price']*$row['quantity']; ?>
                                         </tr>
-                                       
-                                       
-                                            <?php 
+
+
+                                            <?php
                                         //inserting ordered_products
                                         if(isset($_POST['sub'])){
                                             include_once "order.php";
@@ -216,24 +216,24 @@ if(isset($_SESSION['username'])){
                                             $or->setQuantity($row['quantity']);
                                             $res3 = $or->setProducts();
                                             include_once "temp_cart.php";
-                                            $cart = new temp_cart(); 
+                                            $cart = new temp_cart();
                                             $cart->removeMyCart($_SESSION['userid']);
                                             header('Refresh:2; url=bill.php?id='.$lastOrder);
                                             // echo($res3);
 
-                                            
-                                        }
-
-                                        
-
 
                                         }
 
-                                       
-                                        
+
+
+
+                                        }
+
+
+
                                         ?>
-                                            
-                                       
+
+
                                        <tr><td>Subtotal </td><td  colspan=4 class="text-right"><span><?php echo($total .' EGP') ?></span></td></tr>
                                        <tr><td>Tax value </td><td  colspan=4 class="text-right"><span><?php $tax = $total * .14;echo($tax); ?></span></td></tr>
                                        <tr><td>Shipping </td><td  colspan=4 class="text-right"><span>20 EGP</span></td></tr>
@@ -246,7 +246,7 @@ if(isset($_SESSION['username'])){
                                 <div class="payment-accordion">
                                     <div id="accordion">
                                         <div class="card">
-                                          
+
                                             </div>
                                             <?php
                                             include_once "payment.php";
@@ -263,27 +263,27 @@ if(isset($_SESSION['username'])){
                                                 $x++;
                                             }
                                             ?>
-                                            
+
                                             <!-- <div class="custom-control custom-radio">
                                                 <input type="radio" id="customRadio2" name="payrad" class="custom-control-input">
                                                 <label class="custom-control-label" for="customRadio2">CASH</label>
                                             </div> -->
                                     <div class="order-button-payment">
                                         <input type="submit"  name="sub">
-                                       
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <?php 
-                        
+                    <?php
+
                     ?>
                     </form>
                 </div>
                 </div>
                 </div>
 
-            
+
         </div>
         <?php include "footer.php"; ?>
